@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/elzero.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Gamingly Store</title>
+</head>
+
+<body>
+
+
+
+    <div class="header" id="header">
+        <div class="container">
+
+            <a href="index.html" class="logo"><img src="img/logo.png"></a>
+
+            <ul class="main-nav">
+
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#best-deals">Best Deals</a></li>
+                <li><a href="#new-arrival">New Arrival</a></li>
+                <li>
+
+                    <a href="#Categories">Categories</a>
+
+                    <div class="mega-menu"> <!-- Start Megamenu -->
+
+                        <div class="image">
+                            <img src="img/landing.png">
+                        </div>
+
+
+                        <ul class="links">
+                            <li>
+                                <a href="cpu.html">CPU</a>
+                            </li>
+                            <li>
+                                <a href="motherboard.html"></i>Motherboard</a>
+                            </li>
+                            <li>
+                                <a href="storage.html">Storage</a>
+                            </li>
+                            <li>
+                                <a href="gpu.html">GPU</a>
+                            </li>
+                            <li>
+                                <a href="monitor.html">Monitor</a>
+                            </li>
+                        </ul>
+
+
+                        <ul class="links">
+                            <li>
+                                <a href="cases.html">Case</a>
+                            </li>
+                            <li>
+                                <a href="ram.html">RAM</a>
+                            </li>
+                            <li>
+                                <a href="laptop.html">Laptop</a>
+                            </li>
+                            <li>
+                                <a href="chair.html">Chair</a>
+                            </li>
+                            <li>
+                                <a href="accessories.html">Accessories</a>
+                            </li>
+                        </ul>
+
+
+                    </div> <!-- End Megamenu -->
+                </li> <!-- End other links -->
+                <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                <li class="cart-container">
+                    <a href="proceed.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a>
+                    <div class="cart-sidebar">
+                        <h2>Shopping Cart</h2>
+                        <div id="cart-items"></div>
+                        <p id="empty-cart-message">Empty Cart</p>
+                        <p>Total: <span id="cart-total">0</span> JOD</p>
+                        <a href="proceed.html"><span class="procced">PROCEED</span></a>
+                    </div>
+                </li>
+            </ul> <!-- End Main nav -->
+        </div> <!-- End Header container -->
+    </div>
+
+    <div class="landing">
+        <div class="container">
+            <div class="text">
+                <h1>Welcome To Gamingly Store</h1>
+                <p>Everything You Need Is Here</p>
+            </div>
+            <div class="img">
+                <img src="img/landing.png" class="img1">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slider">
+        <div class="main-heading" id="new-arrival">
+            <h1>NEW ARRIVAL</h1>
+        </div>
+
+        <div class="slides">
+            <div class="slide"><img src="img/slider1.jpg" alt="Photo 1"></div>
+            <div class="slide"><img src="img/slider2.jpg" alt="Photo 2"></div>
+            <div class="slide"><img src="img/slider3.jpg" alt="Photo 3"></div>
+            <div class="slide"><img src="img/slider4.jpg" alt="Photo 4"></div>
+            <div class="slide"><img src="img/slider5.jpg" alt="Photo 5"></div>
+            <div class="slide"><img src="img/slider6.jpg" alt="Photo 6"></div>
+        </div>
+        <div class="slider-controls">
+            <span class="prev" onclick="prevSlide()">&#10094;</span>
+            <span class="next" onclick="nextSlide()">&#10095;</span>
+        </div>
+        <div class="slider-bullets">
+            <span class="bullet" onclick="goToSlide(0)"></span>
+            <span class="bullet" onclick="goToSlide(1)"></span>
+            <span class="bullet" onclick="goToSlide(2)"></span>
+            <span class="bullet" onclick="goToSlide(3)"></span>
+            <span class="bullet" onclick="goToSlide(4)"></span>
+            <span class="bullet" onclick="goToSlide(5)"></span>
+        </div>
+    </div>
+
+
+    <div class="categories">
+        <div class="main-heading" id="Categories">
+            <h1>CATEGORIES</h1>
+        </div>
+
+        <div class="container">
+
+
+            <div class=" box">
+                <div class="img">
+                    <a href="cpu.html"><img src="img/cpu.png"></a>
+                </div>
+                <div class="text">
+                    <a href="cpu.html">
+                        <h1>CPU</h1>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+            <div class="box">
+                <div class="img">
+                    <a href="motherboard.html"><img src="img/motherboard.png"></a>
+                </div>
+                <div class="text">
+                    <a href="motherboard.html">
+                        <h1>MOTHERBOARD</h1>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="img">
+                    <a href="storage.html"><img src="img/ssd.png"></a>
+                </div>
+                <div class="text">
+                    <a href="storage.html">
+                        <h1>STORAGE</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <a href="gpu.html"><img src="img/gpu.png"></a>
+                </div>
+                <div class="text">
+                    <a href="gpu.html">
+                        <h1>GPU</h1>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="img">
+                    <a href="monitor.html"><img src="img/monitor.png"></a>
+                </div>
+                <div class="text">
+                    <a href="monitor.html">
+                        <h1>MONITOR</h1>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+            <div class="box">
+                <div class="img">
+                    <a href="cases.html"><img src="img/case.png"></a>
+                </div>
+                <div class="text">
+                    <a href="cases.html">
+                        <h1>CASES</h1>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <div class="img">
+                    <a href="ram.html"><img src="img/ram.png"></a>
+                </div>
+                <div class="text">
+                    <a href="ram.html">
+                        <h1>RAMS</h1>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="img">
+                    <a href="laptop.html"><img src="img/laptop.png"></a>
+                </div>
+                <div class="text">
+                    <a href="laptop.html">
+                        <h1>LAPTOPS</h1>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="img">
+                    <a href="chair.html"><img src="img/chair.png"></a>
+                </div>
+                <div class="text">
+                    <a href="chair.html">
+                        <h1>CHAIRS</h1>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="img">
+                    <a href="accessories.html"><img src="img/accessories.png"></a>
+                </div>
+                <div class="text">
+                    <a href="accessories.html">
+                        <h1>ACCESSORIES</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="best-deals">
+
+        <div class="main-heading" id="best-deals">
+            <h1>Best Deals</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="box">
+                <div class="img">
+                    <img src="img/i9-12900.png">
+                </div>
+                <div class="product-name">
+                    <p>Intel NEW 12Gen Core I9-12700F</p>
+                </div>
+
+                <div class="price">
+                    <p>420 JOD</p>
+                </div>
+                <div class="add-to">
+                    <p class="add-to-cart">Add To Cart</p>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <div class="img">
+                    <img src="img/RTX.png">
+                </div>
+                <div class="product-name">
+                    <p>MSI GeForce RTX 4090 24G</p>
+                </div>
+
+                <div class="price">
+                    <p>500 JOD</p>
+                </div>
+                <div class="add-to">
+                    <p class="add-to-cart">Add To Cart</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="img">
+                    <img src="img/zowie.png">
+                </div>
+                <div class="product-name">
+                    <p>BenQ ZOWIE XL2411K 24inch</p>
+                </div>
+
+                <div class="price">
+                    <p>199 JOD</p>
+                </div>
+                <div class="add-to">
+                    <p class="add-to-cart">Add To Cart</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="abs-img">
+            <img src="img/best-deal-wallpaper.png">
+        </div>
+
+
+
+    </div>
+    <footer>
+
+
+        <div class="container">
+
+            <div class="img">
+                <img src="img/logo.png">
+            </div>
+
+            <div class="times">
+                <p>Call Us : 0789799686</p>
+                <p>Saturday -Thursday : 10:00AM – 9:00PM</p>
+                <p>Friday : Closed</p>
+            </div>
+
+
+            <div class="location">
+                <p>AABU University</p>
+                <p>IT college</p>
+                <p>Mafraq,Jordan</p>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <div class="last-footer">
+        <div class="container">
+            <span>Made By A7mad <i class="fa-solid fa-heart"></i> </span>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
